@@ -1,8 +1,9 @@
 
+import 'package:assign/product.dart';
 import 'package:assign/studentform.dart';
 import 'package:flutter/material.dart';
 class Homescreen extends StatefulWidget {
-  const Homescreen({ Key? key }) : super(key: key);
+  const Homescreen({ super.key });
 
   @override
   _HomescreenState createState() => _HomescreenState();
@@ -16,9 +17,15 @@ class _HomescreenState extends State<Homescreen> {
         child:ListView(
           children: [
              ListTile(
-                  title: Text("studentForm"),
+                  title: const Text("studentForm"),
                   onTap: () => {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Studentform()))
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const Studentform()))
+                  },
+                ),
+                ListTile(
+                  title: const Text("Product"),
+                  onTap: () => {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const Product()))
                   },
                 )
           ],

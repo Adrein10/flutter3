@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 class Studentform extends StatefulWidget {
-  const Studentform({ Key? key }) : super(key: key);
+  const Studentform({ super.key });
 
   @override
   _StudentformState createState() => _StudentformState();
@@ -14,16 +14,6 @@ class _StudentformState extends State<Studentform> {
         title: const Text("Student Form"),
         foregroundColor: Colors.white,
         backgroundColor: Colors.black,
-      ),
-      body: 
-      const SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: 
-        Column(
-          children: [
-            
-          ],
-        ),
       ),
     );
   }
